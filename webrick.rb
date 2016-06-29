@@ -18,7 +18,7 @@ opt = {
 server = WEBrick::HTTPServer.new(opt)
 
 # CGIを実行可能にする
-cgi_dir = File.dirname(File.expand_path(__FILE__))
+cgi_dir = File.dirname(".")
 server.mount("/", WEBrick::HTTPServlet::FileHandler, cgi_dir)
 
 # サーバの終了シグナルを設定する

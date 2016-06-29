@@ -1,10 +1,6 @@
-#!/usr/bin/ruby
-# 上のrubyへのパスは which ruby した結果を当てはめる
+#! /usr/bin/ruby
 
-# HTTPレスポンス（データの種類を表す、text/html）
 printf("Content-Type: text/html\n\n")
-
-# ここからHTTPレスポンスのデータ
-printf("123")
+printf("123\n")
 
 
